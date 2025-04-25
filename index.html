@@ -7,6 +7,7 @@
     <title>Galinhanes</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="./assets/fotico.png" type="image/x-icon">
+    <meta property="og:title" content="Portfolio Juan Galinhanes" />
 </head>
 
 <body>
@@ -15,12 +16,36 @@
                 href="#proxectos">Proxectos</a><a href="#contacto">Contacto</a></nav>
     </header>
     <main>
+        <div class="contedorrotate"><div class="elementorotate"></div><button class="dalle" id="dalle"><p>DALLE</p></button></div>
+    <div class="contedorfondo contedoraparece" id="contedor1">
+        <div class="barra primeira"></div>
+        <div class="barra segunda"></div>
+        <div class="barra terceira"></div>
+        <div class="barra cuarta"></div>
+        <div class="barra quinta"></div>
+    </div>
+    <div class="contedorfondo2 contedoraparece" id="contedor2">
+        <div class="barra primeira"></div>
+        <div class="barra segunda"></div>
+        <div class="barra terceira"></div>
+        <div class="barra cuarta"></div>
+        <div class="barra quinta"></div>
+    </div>
+    <div class="contedorfondo3 contedoraparece" id="contedor3">
+        <div class="barra primeira"></div>
+        <div class="barra segunda"></div>
+        <div class="barra terceira"></div>
+        <div class="barra cuarta"></div>
+        <div class="barra quinta"></div>
+    </div>
+    
         <section id="presentacion">
             <div class="imaxe"><img src="./assets/fotico.png" alt=""></div>
             <div class="texto"><h2> Juan Galiñanes</h2><p>Son natural de Cambados, nacido o 11 de xaneiro do 1988. Teño unha licenciatura en Bioloxía, fixen un Máster en Enxeñería Ambiental e traballei uns anos no departameto de Edafoloxía da USC.
-                Por cousas da vida, os últimos anos adiqueime a empregos de todo tipo (comercial, telefonista...). <br>
+                Por cousas da vida, os últimos anos adiqueime a empregos de todo tipo (comercial, telefonista..). <br>
                 En xaneiro deste ano comecei a facer un curso de formación de Deseño Web. A idea era estar entretido mentras buscaba emprego, pero rematei descubrindo que me encanta a materia e creo que atopei a miña vocación. <br>
                 Traballo moi ben en equipo, gústame aprender cousas novas e son moi imaxinativo.
+                <br>
                 <br>
                 <a href="./assets/CV GALI.pdf">Curriculum</a>
             </p></div>
@@ -29,11 +54,11 @@
             <h2>Habilidades</h2>
             <p>Grazas ó meu historial académico e vida laboral, adquirín coñecementos e habilidades no ámbito do medio ambiente e atención ó cliente, así como un nivel medio-alto de ofimática. <br>
     
-                No curso de formación que estou a realizar, estou a obter os coñecementos necesarios para entender a
+                No curso de formación que estou a realizar, estou a obter as habilidades necesarios para entender a
                 realizar páxinas web. <br>
                 Domino bastante ben a linguaxe HTML e CSS, para estructurar e dar apariencia a un entorno web. Estou a
-                comezar a entender a linguaxe de programacion JavaScript, que me parece realmente interesante. <br>
-                Coñezo o uso de frameworks de CSS, como Bootstrap e Bulma, ou de JavaScript, como Svelte, pero prefiro
+                comezar a entender a linguaxe de programacion JavaScript, que me parece realmente interesante. Tamén estou familiarizado co uso de APIs.<br> 
+                Coñezo e sei utilizar frameworks de CSS, como Bootstrap e Bulma, ou de JavaScript, como Svelte, pero prefiro
                 non utilizalos de momento para asimilar mellor os códigos. Pola mesmo razón evito o uso de IA ata que me
                 sexa imprescindible.
 
@@ -42,8 +67,8 @@
         </section>
         <section id="proxectos">
             <h2>Proxectos</h2>
-            <p>Dado que non fai moito tempo que estudo deseño web, os meus proxectos de momento son de tipo
-                experimental. Ordénoos de máis antigo a máis recente</p>
+            <p class="proxectospresentacion">Dado que non fai moito tempo que estudo deseño web, os meus proxectos de momento son de tipo
+                experimental. Ordénoos de máis antigo a máis recente para poder analizar a progresión de ideas:</p>
             <div class="contedorproxectos">
                 <div class="proxecto animacions">
                     <div class="visual">
@@ -69,9 +94,9 @@
                     </div>
                     <div class="proxectotexto">
                         <h3>Animacións adaptativas</h3>
-                        <p>Estou a crear unha biblioteca de animacións, que se poidan usar tanto como fondo coma de
-                            elemento dentro dunah web. O máis interesante destas animacións é que se adaptan a todos os
-                            tamaños de pantalla sen alterarse, xa que as posicións e medidas son todas relativas</p>
+                        <p>Estou a crear unha biblioteca de animacións CSS, que se poidan usar tanto como fondo coma de
+                            elemento dentro dunah web. Os elementos animados poden intercambiarse visualmente por algo acorde a calquera proxecto. O máis interesante destas animacións é que se adaptan a todos os
+                            tamaños de pantalla sen alterar a súa funcionalidade, xa que as posicións e medidas son todas relativas</p>
                     </div>
                 </div>
                 <div class="proxecto jurassic">
@@ -80,8 +105,8 @@
                     </div>
                     <div class="proxectotexto">
                         <h3>Jurassic Park App</h3>
-                        <p>Usando únicamente CSS e HTML ó comezo do curso intentei realizar unha especie de app na que facendo click enriba de cada zona, podes obter información do dinosauro que habita nela.
-                            Nalgún momento debería actualizala con coñecementos máis actualizados
+                        <p>Usando únicamente CSS e HTML pouco despois do comezo do curso intentei realizar unha especie de app na que facendo click enriba de cada zona, podes obter información do dinosauro que habita nela.
+                            Nalgún momento debería renovala con coñecementos máis actualizados.
                         </p>
                     </div>
                 </div>
@@ -91,7 +116,7 @@
                     </div>
                     <div class="proxectotexto">
                         <h3>Fada Molesta</h3>
-                        <p>Xa con coñecementos de JavaScript, ocurréuseme facer unha app basada no videoxogo Ocarina of Time. Facendo click en Navi, a famosa fada dese videoxogo, escapa do dedo e emite as súas molestas frases. Optimizada para móviles, ten moito éxito como desestresante.
+                        <p>Xa con coñecementos de JavaScript, ocurréuseme facer unha app basada no videoxogo Ocarina of Time. Facendo click en Navi, a famosa fada dese videoxogo, escapa do dedo e emite as súas molestas frases. Optimizada para móviles, o feedback que teño das persoas que a probaron é moi positivo (como desestresante).
                         </p>
                     </div>
                 </div>
@@ -101,7 +126,8 @@
                     </div>
                     <div class="proxectotexto">
                         <h3>Videoxogo Dungar</h3>
-                        <p>O meu último proxecto e do que me atopo máis orgulloso. Un videoxogo creado de cero, sen buscar info sobre como facelo. A partir do JavaScript básico que aprendemos no curso e usando a lóxica, consigo poder mover ó personaxe, matar inimigos, morrer contra eles, caer por buratos...e todo con ilustracións propias, que lle da un toque moi artesanal. Xa van máis de 3000 liñas de código JavaScript, e só van dous niveis. A idea é chegar a dez. Optimizado para funcionar en móvil e PC.
+                        <p>O meu último proxecto e do que me atopo máis orgulloso. Un videoxogo creado de cero, sen buscar info sobre como facelo. Só usando o JavaScript básico que aprendemos no curso e as miñas ideas, consigo poder mover ó personaxe, matar inimigos, morrer contra eles, caer por buratos, engadir efectos de sonido...e todo con ilustracións propias. <br> Xa van máis de 3000 liñas de código JavaScript, e só van dous niveis. A idea é chegar a dez.
+                            Tamén optimizado para dispositivos móviles, ten un feedback bastante positivo, e teño bastantes persoas pendientes de actualizacións.
                         </p>
                     </div>
                 </div>
@@ -111,9 +137,12 @@
         <section id="contacto">
             <h2>Contacto</h2>
             <div class="formasdecontacto">
-                <div class="via mail"><p>Correo: </p> <a href="mailto:galinhanes@gmail.com">galinhanes@gmail.com</a></div>
-                <div class="via movil"><p>Teléfono:</p><a href="tel:+34677904874">675904874</a></div>
-                <div class="via github"><p>GitHub:</p><a href="https://github.com/Galinhanes">github.com/Galinhanes</a></div>
+                <div class="via mail"><p><svg data-icon-name="mail-notification" data-style="line" icon_origin_id="16040" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="mail-notification" class="icon line" width="48" height="48"><path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;" d="M21,13v6a1,1,0,0,1-1,1H4a1,1,0,0,1-1-1V7A1,1,0,0,1,4,6h8" id="primary"></path><path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;" d="M7,10l4.38,3.49a1,1,0,0,0,1.24,0l2.13-1.7" data-name="primary" id="primary-2"></path><circle style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;" r="2.5" cy="6.5" cx="18.5" data-name="primary" id="primary-3"></circle></svg> </p> <a href="mailto:galinhanes@gmail.com">galinhanes@gmail.com</a></div>
+                <div class="via movil"><p><svg data-icon-name="call-in" data-style="line" icon_origin_id="16013" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="call-in" class="icon line" width="48" height="48"><path style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;" d="M21,15v3.93a2,2,0,0,1-2.29,2A18,18,0,0,1,3.14,5.29,2,2,0,0,1,5.13,3H9a1,1,0,0,1,1,.89,10.74,10.74,0,0,0,1,3.78,1,1,0,0,1-.42,1.26l-.86.49a1,1,0,0,0-.33,1.46,14.08,14.08,0,0,0,3.69,3.69,1,1,0,0,0,1.46-.33l.49-.86A1,1,0,0,1,16.33,13a10.74,10.74,0,0,0,3.78,1A1,1,0,0,1,21,15ZM16,8l5-5" id="primary"></path><polyline style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 1;" points="21 8 16 8 16 3" data-name="primary" id="primary-2"></polyline></svg></p><a href="tel:+34677904874">675904874</a></div>
+                <div class="via github"><p><svg width="30px" height="30px" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#ffff"/>
+                    </svg>
+                    </p><a href="https://github.com/Galinhanes">github.com/Galinhanes</a></div>
             </div>
         </section>
     </main>

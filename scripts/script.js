@@ -3,6 +3,13 @@ let btn1=document.getElementById("circulo1");
 let btn2=document.getElementById("circulo2");
 let btn3=document.getElementById("circulo3");
 let btn4=document.getElementById("circulo4");
+let contedor1=document.getElementById('contedor1');
+let contedor2=document.getElementById('contedor2');
+let contedor3=document.getElementById('contedor3');
+
+let dalle=document.getElementById("dalle");
+let clickCount=0
+
 const slides = document.querySelectorAll('.slider__slide');
 const totalSlides = slides.length;
 const sliderContainer = document.querySelector('.slider__contenedor');
@@ -47,4 +54,26 @@ function colorbotons(){
                     btn4.classList.add("vermello");}
 }
 // Autoplay
-setInterval(siguienteSlide, 10000);
+setInterval(siguienteSlide, 15000);
+
+//fondo
+
+function aparecerfondo(){
+    contedor1.classList.remove("contedoraparece");
+    contedor2.classList.remove("contedoraparece");
+    contedor3.classList.remove("contedoraparece");
+   
+}
+function desaparecerfondo(){
+    contedor1.classList.add("contedoraparece");
+    contedor2.classList.add("contedoraparece");
+    contedor3.classList.add("contedoraparece");
+    
+}
+dalle.addEventListener('click',function(){
+    clickCount ++;
+    if(clickCount%2 !==0){aparecerfondo();dalle.style.backgroundColor=("green")}
+    else{desaparecerfondo();dalle.style.backgroundColor=("goldenrod")}
+
+    
+})
