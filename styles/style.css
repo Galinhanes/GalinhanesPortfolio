@@ -132,9 +132,9 @@ gap: 20px;}
   
 }
 @keyframes imaxe {0%{rotate:0deg}
-25%{rotate:25deg}
+25%{rotate:15deg}
 50%{rotate:0deg}
-75%{rotate:-25deg}
+75%{rotate:-15deg}
 100%{rotate:0deg}
     
 }
@@ -143,9 +143,9 @@ gap: 20px;}
     animation: imaxe 5s linear infinite;}
 
     @keyframes imaxe {0%{rotate:0deg}
-    25%{rotate:15deg}
+    25%{rotate:10deg}
     50%{rotate:0deg}
-    75%{rotate:-15deg}
+    75%{rotate:-10deg}
     100%{rotate:0deg}
         
     }  
@@ -405,6 +405,21 @@ text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2p
     left: 50%;
     animation: primeira 20s linear infinite;
 }
+.primeirarapido{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%);
+    animation: primeira 4s linear infinite,psyco 3s linear infinite,estrela 5s linear infinite;
+}
+    @keyframes estrela {0%,100%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%);
+    }
+    20%{clip-path:polygon(20% 20%,40% 40%, 50% 10%, 50% 10%,60% 40%, 80% 20%,70% 40%, 90% 50%, 90% 50%,70% 60%,80% 80%,60% 60%,50% 90%, 50% 90%, 40% 60%, 20% 80%, 30% 60%, 10% 50%, 10% 50%, 30% 40%);
+        scale:1
+  }
+  40%{rotate:0deg}
+  50%{scale:0.2;rotate:360deg}
+  60%{rotate:0deg}
+  80%{clip-path:polygon(20% 20%,40% 40%, 50% 10%, 50% 10%,60% 40%, 80% 20%,70% 40%, 90% 50%, 90% 50%,70% 60%,80% 80%,60% 60%,50% 90%, 50% 90%, 40% 60%, 20% 80%, 30% 60%, 10% 50%, 10% 50%, 30% 40%);
+    scale:1
+  }
+    }
 
 .segunda {
     background: #CE9239;
@@ -415,7 +430,15 @@ background: linear-gradient(to right, #CE9239 0%, #A46F0B 50%, #C55F5A 100%);
     left: 10%;
     animation: segunda 15s linear infinite;
 }
-
+.segundarapido{clip-path: polygon(0% 0%,20% 0%,80% 0%, 100% 0%, 100% 40%, 100% 60%,100% 100%,80% 100%, 20% 100%, 0% 100%, 0% 60%, 0% 40%);
+    animation: segunda 3s linear infinite,psyco 4s linear infinite, diabolo 5s linear infinite;}
+   @keyframes diabolo {0%,100%{clip-path: polygon(0% 0%,20% 0%,80% 0%, 100% 0%, 100% 40%, 100% 60%,100% 100%,80% 100%, 20% 100%, 0% 100%, 0% 60%, 0% 40%)}
+   20%{clip-path: polygon(40% 20%,45% 40%,55% 40%, 60% 20%, 90% 50%, 90% 50%,60% 80%,55% 60%, 45% 60%, 40% 80%, 10% 50%, 10% 50%);scale:1}
+   40%{rotate:0deg}
+  50%{scale:0.2;rotate:-360deg}
+  60%{rotate:0deg}
+   80%{clip-path: polygon(40% 20%,45% 40%,55% 40%, 60% 20%, 90% 50%, 90% 50%,60% 80%,55% 60%, 45% 60%, 40% 80%, 10% 50%, 10% 50);scale:1}
+   } 
 .terceira {
     background: #CEA212;
     background: -moz-linear-gradient(left, #CEA212 0%, #A46537 50%, #C5BA68 100%);
@@ -425,7 +448,17 @@ background: linear-gradient(to right, #CE9239 0%, #A46F0B 50%, #C55F5A 100%);
     left: 40%;
     animation: terceira 22s linear infinite;
 }
-
+.terceirarapido{clip-path: polygon(0% 0%, 100% 0%,100% 100%,0% 100%);
+    animation: terceira 2s linear infinite,psyco 2s linear infinite,rombo 4s alternate-reverse infinite;
+}
+@keyframes rombo {0%,100%{clip-path: polygon(0% 0%, 100% 0%,100% 100%,0% 100%)}
+20%{clip-path: polygon(50% 20%, 90% 50%,50% 80%,10% 50%);scale:1}
+40%{rotate:0deg}
+  50%{scale:0.2;rotate:360deg}
+  60%{rotate:0deg}
+80%{clip-path: polygon(50% 20%, 90% 50%,50% 80%,10% 50%);scale:1}
+    
+}
 .cuarta {
     background: #CEA166;
 background: -moz-radial-gradient(center, #CEA166 0%, #A4591A 50%, #C59B21 100%);
@@ -435,7 +468,18 @@ background: radial-gradient(ellipse at center, #CEA166 0%, #A4591A 50%, #C59B21 
     left: 0%;
     animation: cuarta 25s linear infinite;
 }
+.cuartarapido{
+    animation: cuarta 3s linear infinite,psyco 4s linear infinite,circulo 6s linear infinite;
+}
+@keyframes circulo {0%,100%{border-radius: 0%;}
+20%{border-radius: 80%;scale:1}
+40%{rotate:0deg}
+  50%{scale:0.2;rotate:-360deg}
+  60%{rotate:0deg}
+80%{border-radius: 80%;scale:1}
 
+    
+}
 .quinta {
     background: #CE8526;
 background: -moz-linear-gradient(45deg, #CE8526 0%, #A48A3A 50%, #C56A32 100%);
@@ -445,6 +489,20 @@ background: linear-gradient(45deg, #CE8526 0%, #A48A3A 50%, #C56A32 100%);
     left: 30%;
     animation: quinta 17s linear infinite;
 }
+.quintarapido{
+    clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%);
+    animation: quinta 2s linear infinite,psyco 3s linear infinite,rara 8s linear infinite;
+}
+
+@keyframes rara {0%,100%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}
+  20%{clip-path: polygon(40% 20%,30% 40%, 50% 30%, 50% 30%,70% 40%, 60% 20%,80% 30%, 70% 50%, 70% 50%,80% 70%,60% 80%,70% 60%,50% 70%, 50% 70%, 30% 60%, 40% 80%, 20% 70%, 30% 50%, 30% 50%, 20% 30%);scale:1} 
+  40%{rotate:0deg}
+  50%{scale:0.2;rotate:360deg}
+  60%{rotate:0deg} 
+  80%{clip-path: polygon(40% 20%,30% 40%, 50% 30%, 50% 30%,70% 40%, 60% 20%,80% 30%, 70% 50%, 70% 50%,80% 70%,60% 80%,70% 60%,50% 70%, 50% 70%, 30% 60%, 40% 80%, 20% 70%, 30% 50%, 30% 50%, 20% 30%);scale:1}  
+}
+
+
 
 @keyframes primeira {
     0% {
@@ -525,6 +583,7 @@ background: linear-gradient(45deg, #CE8526 0%, #A48A3A 50%, #C56A32 100%);
     z-index: +1;
     position: absolute;
 }
+
 .elementorotate{
     width: 70%;
     height: 70%;
@@ -532,25 +591,58 @@ background: linear-gradient(45deg, #CE8526 0%, #A48A3A 50%, #C56A32 100%);
     position: relative;
     left: 15%;
     top:15%;
-    animation: rotacion 10s linear infinite;
-    background-image: url(../assets/koisnadando.png);
+    animation: rotacion 10s linear infinite, nadar 1s linear infinite;
+    background-image: url(../assets/carpas1-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+.elementorotate2{
+    width: 70%;
+    height: 70%;
+    
+    position: relative;
+    left: 15%;
+    top:-55%;
+    animation: rotacion 10s linear infinite, nadar2 1s linear infinite ;
+    background-image: url(../assets/carpas2-removebg-preview.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.elementorotate:hover{
-    animation:rotacion 1s linear infinite;
+
+@keyframes rotacion {
+    0%{rotate:0deg}
+    100%{rotate:-360deg}
+    
+}
+@keyframes nadar {
+    0%{opacity:100%}
+    49%{opacity: 100%;}
+    50%{opacity: 0%;}
+    99%{opacity: 0%;}
+    100%{opacity:100%}
+}
+@keyframes nadar2 {
+    0%{opacity:0%}
+    49%{opacity: 0%;}
+    50%{opacity: 100%;}
+    99%{opacity:100%;}
+    100%{opacity:0%}
 }
 .dalle{
     position: relative;
-    top:-40%;
+    top:-110%;
     left:30%;
     width: 40%;
     height: 40%;
+    color: #d42121;
     border-radius: 50%;
     background: goldenrod;
     border: 1px solid goldenrod;
     border-bottom: 5px ridge goldenrod;
+
    
 
 }
@@ -558,7 +650,7 @@ background: linear-gradient(45deg, #CE8526 0%, #A48A3A 50%, #C56A32 100%);
     text-shadow: 0px 0px 15px 15px black;
     text-decoration: none;
     font-weight: 500;
-    color: #d42121;
+    
     font-size: 15px;
     font-family: var(--fonte5);
 }
@@ -567,12 +659,64 @@ background: linear-gradient(45deg, #CE8526 0%, #A48A3A 50%, #C56A32 100%);
     border: 0px;
     border-bottom: 1px;
 }
-@keyframes rotacion {
-    0%{rotate:0deg}
-    100%{rotate:-360deg}
+.dalle1{background-color: rgb(165, 88, 101); color: white; border: 1px solid rgb(165, 88, 101);
+    border-bottom: 5px ridge rgb(165, 88, 101)}
+.dalle2{background-color: red; color:yellow;border: 1px solid red;
+    border-bottom: 5px ridge red;}
+.maisrapidocarpa1{ animation: rotacion 5s linear infinite, nadar 0.5s linear infinite;}
+.maisrapidocarpa2{ animation: rotacion 5s linear infinite, nadar2 0.5s linear infinite;}
+.superrapidocarpa1{ animation: rotacion 1.5s linear infinite, nadar 0.25s linear infinite;}
+.superrapidocarpa2{ animation: rotacion 1.5s linear infinite, nadar2 0.25s linear infinite;}
+
+/*ondulacion experimental*/
+@property --angle{
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 0deg;
+  }
+.ondulante{
+    animation:ondulante 1s linear infinite;
+    background: conic-gradient(from var(--angle), #00ffbb9b,#45b2ffa7);
+    
+    clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%);
+   
+}
+@keyframes ondulante {0%{--angle:0deg; clip-path: polygon(5% 5%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}
+5%{ clip-path: polygon(0% 0%,20% 5%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}
+10%{clip-path: polygon(0% 0%,20% 0%, 40% 5%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20% )}
+15%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 5%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20% )}
+20%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 5%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}
+25%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 95% 5%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}
+30%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,95% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}
+35%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 95% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20% )}
+40%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 95% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}
+45%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,95% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}  
+50%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,95% 95%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)} 
+55%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 95%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)} 
+60%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 95%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)} 
+65%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 95%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)} 
+70%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 95%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)} 
+75%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 5% 95%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)} 
+80%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 5% 80%, 0% 60%, 0% 40%, 0% 20%)}
+85%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 5% 60%, 0% 40%, 0% 20%)} 
+90%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 5% 40%, 0% 20%)} 
+95%{clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 5% 20%)} 
+100%{--angle:360deg; clip-path: polygon(5% 5%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%)}  
+
+}
+.ondulanteinverso{ animation:ondulante 1s reverse infinite;
+    background: conic-gradient(from var(--angle), #00ff009b,#4558ffa7);
+    
+    clip-path: polygon(0% 0%,20% 0%, 40% 0%, 60% 0%,80% 0%, 100% 0%,100% 20%, 100% 40%, 100% 60%,100% 80%,100% 100%,80% 100%,60% 100%, 40% 100%, 20% 100%, 0% 100%, 0% 80%, 0% 60%, 0% 40%, 0% 20%);}
+
+.psyco{
+    animation:psyco 5s linear infinite
+}
+@keyframes psyco {0%{filter: hue-rotate(0deg);}
+50%{filter: hue-rotate(360deg);}
+100%{filter: hue-rotate(0deg);}
     
 }
-
 
 /*mediaquerys*/
 @media(max-width:1250px){
