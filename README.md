@@ -1,0 +1,1 @@
+Neste portfolio intento deixar patentes os mes coñecementos adquiridos ata o momento, en canto a uso de código de forma autónoma (sen librerías, frameworks,...). Paréceme a mellor maneira de demostrar o que sei facer.
