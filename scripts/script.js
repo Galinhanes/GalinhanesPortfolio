@@ -178,7 +178,8 @@ dalle.addEventListener('click', function () {
 
 let explicacion3d = document.getElementById("explicacion3d");
 let boton3d = document.getElementById("boton3d");
-let clickCount3d = 0
+let clickCount3d = 0;
+let body=document.getElementById("body")
 
 boton3d.addEventListener('click', function () {
     clickCount3d++;
@@ -190,7 +191,8 @@ function activar3d() {
     presentacion.classList.add("presentacion3d");
     habilidades.classList.add("habilidades3d");
     proxectos.classList.add("proxectos3d");
-    contacto.classList.add("contacto3d")
+    contacto.classList.add("contacto3d");
+    body.classList.add("body3d")
 }
 function desactivar3d() {
     presentacion.classList.remove("presentacion3d");
@@ -205,6 +207,7 @@ function desactivar3d() {
     habilidades.classList.remove("habilidades3dsubir");
     proxectos.classList.remove("proxectos3dsubir");
     contacto.classList.remove("contacto3dsubir");
+    body.classList.remove("body3d")
 }
 presentacion.addEventListener("wheel", function () {
     if (presentacion.classList.contains("presentacion3d")) {
@@ -250,6 +253,7 @@ let extras = document.getElementById("extras");
 let activarboton3d = document.getElementById("activar3d");
 let clickCountextras = 0;
 
+
 extras.addEventListener('click', function () {
     activarExtras()
 
@@ -294,8 +298,8 @@ function activarExtras() {
         segunda3.classList.remove("segundarapido");
         terceira3.classList.remove("terceirarapido");
         cuarta3.classList.remove("cuartarapido");
-        quinta3.classList.remove("quintarapido");
-        contedorrotate.classList.remove("psyco");
+        quinta3.classList.remove("quintarapido"); body.classList.remove("body3d");
+        contedorrotate.classList.remove("psyco"); clickCount = 0;
         explicacion3d.innerHTML = " Experimental, só para escritorio. Non combinar co 2º click nos koi";boton3d.innerHTML="3D" ;clickCount3d = 0
     }
 
